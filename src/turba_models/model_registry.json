@@ -1,0 +1,149 @@
+{
+  "models": [
+    {
+      "model_key": "barley_rainfed",
+      "crop_name": "Barley (Rainfed)",
+      "model_name": "LightGBM",
+      "task": "direct_npk_recommendation",
+      "artifact_path": "models/barley-rainfed.joblib",
+      "feature_columns": [
+        "longitude",
+        "latitude",
+        "soil_ph",
+        "organic_matter_pct",
+        "available_p2o5",
+        "available_k2o"
+      ],
+      "target_columns": [
+        "recommended_n",
+        "recommended_p2o5",
+        "recommended_k2o"
+      ],
+      "split_policy": "fixed_deterministic_80_20",
+      "metrics_overall": {
+        "R2": 0.9999454003682429,
+        "MAE": 0.040212871471789834,
+        "MedAE": 0.0020334663061593,
+        "RMSE": 0.16042863320771125,
+        "MAPE": 10147165.138752248,
+        "sMAPE": 73.76154473165444
+      }
+    },
+    {
+      "model_key": "maize_grain",
+      "crop_name": "Maize (Grain)",
+      "model_name": "XGBoost",
+      "task": "direct_npk_recommendation",
+      "artifact_path": "models/maize-grain.joblib",
+      "feature_columns": [
+        "longitude",
+        "latitude",
+        "soil_ph",
+        "organic_matter_pct",
+        "available_p2o5",
+        "available_k2o"
+      ],
+      "target_columns": [
+        "recommended_n",
+        "recommended_p2o5",
+        "recommended_k2o"
+      ],
+      "split_policy": "fixed_deterministic_80_20",
+      "metrics_overall": {
+        "R2": 0.9873768144773866,
+        "MAE": 0.385458469825881,
+        "MedAE": 0.002830578204739235,
+        "RMSE": 1.4278880245094598,
+        "MAPE": 1098472.4190965977,
+        "sMAPE": 56.786803473552546
+      }
+    },
+    {
+      "model_key": "maize_silage",
+      "crop_name": "Maize (Silage)",
+      "model_name": "XGBoost",
+      "task": "direct_npk_recommendation",
+      "artifact_path": "models/maize-silage.joblib",
+      "feature_columns": [
+        "longitude",
+        "latitude",
+        "soil_ph",
+        "organic_matter_pct",
+        "available_p2o5",
+        "available_k2o"
+      ],
+      "target_columns": [
+        "recommended_n",
+        "recommended_p2o5",
+        "recommended_k2o"
+      ],
+      "split_policy": "fixed_deterministic_80_20",
+      "metrics_overall": {
+        "R2": 0.9942729224818779,
+        "MAE": 0.47766064990329227,
+        "MedAE": 0.0006386974461728793,
+        "RMSE": 1.4534893714403179,
+        "MAPE": 343509341.45133173,
+        "sMAPE": 56.68001785287419
+      }
+    },
+    {
+      "model_key": "wheat_irrigated",
+      "crop_name": "Wheat (Irrigated)",
+      "model_name": "LightGBM",
+      "task": "direct_npk_recommendation",
+      "artifact_path": "models/wheat-irrigated.joblib",
+      "feature_columns": [
+        "longitude",
+        "latitude",
+        "soil_ph",
+        "organic_matter_pct",
+        "available_p2o5",
+        "available_k2o"
+      ],
+      "target_columns": [
+        "recommended_n",
+        "recommended_p2o5",
+        "recommended_k2o"
+      ],
+      "split_policy": "fixed_deterministic_80_20",
+      "metrics_overall": {
+        "R2": 0.9999606530374828,
+        "MAE": 0.06933481089375058,
+        "MedAE": 0.0036787057125143483,
+        "RMSE": 0.20964579188347496,
+        "MAPE": 15861832.932552345,
+        "sMAPE": 74.15152723765759
+      }
+    },
+    {
+      "model_key": "wheat_rainfed",
+      "crop_name": "Wheat (Rainfed)",
+      "model_name": "LightGBM",
+      "task": "direct_npk_recommendation",
+      "artifact_path": "models/wheat-rainfed.joblib",
+      "feature_columns": [
+        "longitude",
+        "latitude",
+        "soil_ph",
+        "organic_matter_pct",
+        "available_p2o5",
+        "available_k2o"
+      ],
+      "target_columns": [
+        "recommended_n",
+        "recommended_p2o5",
+        "recommended_k2o"
+      ],
+      "split_policy": "fixed_deterministic_80_20",
+      "metrics_overall": {
+        "R2": 0.9999339421568787,
+        "MAE": 0.05777439025500573,
+        "MedAE": 0.003532079920010615,
+        "RMSE": 0.18795224777203354,
+        "MAPE": 12624664.655987633,
+        "sMAPE": 73.63743672823036
+      }
+    }
+  ]
+}

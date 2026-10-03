@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "turba-models"
-version = "0.1.0"
+version = "0.1.1"
 description = "Model package for loading pretrained soil fertility and fertilizer recommendation models for Morocco."
 readme = "README.md"
 requires-python = ">=3.10"

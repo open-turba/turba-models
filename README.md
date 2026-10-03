@@ -139,6 +139,6 @@ Returns a DataFrame with:
 
 ## Reproducibility
 
-- packaged `.joblib` model files under `src/turba_models/models/`
-- the training notebook used to produce the current results under `notebooks/`
-- exported benchmark summaries under `reports/`
+- [Training and benchmark notebook](notebooks/esa_worldcereal_morocco_cereals_medium_model_training_and_evaluation.ipynb) reproduces the deterministic 80/20 benchmark across nine model families from the registered `turba-data` snapshot and generates the benchmark   tables, selected-model summary, model registry, and serialized models.
+- Packaged model artifacts are under `src/turba_models/models/`.
+- Benchmark outputs are under `reports/`.

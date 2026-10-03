@@ -1,6 +1,7 @@
 {
   "models": [
     {
+      "model_key": "barley_rainfed",
       "crop_name": "Barley (Rainfed)",
       "model_name": "LightGBM",
       "task": "direct_npk_recommendation",
@@ -29,6 +30,7 @@
       }
     },
     {
+      "model_key": "maize_grain",
       "crop_name": "Maize (Grain)",
       "model_name": "XGBoost",
       "task": "direct_npk_recommendation",
@@ -57,6 +59,7 @@
       }
     },
     {
+      "model_key": "maize_silage",
       "crop_name": "Maize (Silage)",
       "model_name": "XGBoost",
       "task": "direct_npk_recommendation",
@@ -85,6 +88,7 @@
       }
     },
     {
+      "model_key": "wheat_irrigated",
       "crop_name": "Wheat (Irrigated)",
       "model_name": "LightGBM",
       "task": "direct_npk_recommendation",
@@ -113,6 +117,7 @@
       }
     },
     {
+      "model_key": "wheat_rainfed",
       "crop_name": "Wheat (Rainfed)",
       "model_name": "LightGBM",
       "task": "direct_npk_recommendation",
